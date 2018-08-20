@@ -1,0 +1,54 @@
+div {
+    margin: 5px; 
+    padding: 5px;
+    border: 1px dotted black;
+}
+
+#top {
+    background-color: gray;
+}
+
+#text {
+    background-color: lightblue;
+}
+
+.size {
+    background-color: lightpink;
+
+}
+
+@media only screen and (max-width:480px) {
+    .small {
+        display: block;
+    }
+    .medium {
+        display: none;
+    }
+    .large {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:481px) {
+    .small {
+        display: none;
+    }
+    .medium {
+        display: block;
+    }
+    .large {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1023px) {
+    .small {
+        display: none;
+    }
+    .medium {
+        display: none;
+    }
+    .large {
+        display: block;
+    }
+}
